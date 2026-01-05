@@ -39,4 +39,76 @@ button
         padding: 0.8rem 1.6rem;
         font-size:1.1rem;
         cursor:pointer;
+        border-style:outset;
+        border-radius: 50px;
+        transition: 0.2s;
+    }
+#burger
+    {
+        color: white;
+        background: none;
+        border: none;
+        font-size: 15px;
+    }
+.hero
+    {
+        background-color: white;
+        color: black;
+        padding: 6rem 1rem;
+        text-align: center;
+    }    
+.hero h1 
+    {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+.hero p
+    {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+.explore
+    {
+        background-color: white;
+        color:black;
+        padding: 1rem 1rem;
+        text-align: center;
+    }    
+.explore h2
+    {
+        font-size: 44px;
+        margin-bottom: 10px;   
+    }
+.explore p
+    {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+#theme-toggle
+    {
+        background: none;
+        font-size: 16px;
+        border: none;
+        text-align: center;
+    }
+button:hover
+    {
+        transform: scale(1.05);
+    }
+nav.active 
+    {
+        display: block !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background:#1a1a1a;
+        padding: 1rem;
+        text-align: center;
+    }
+nav.active a
+    {
+        display: block;
+        margin: 1rem 0;
+        font-size: 1.3rem;
     }
