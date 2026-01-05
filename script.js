@@ -1,6 +1,6 @@
 console.log ("JS works");
 
-const burger = document.GetElementById(`burger`);
+const burger = document.getElementById(`burger`);
 const nav = document.querySelector(`nav`);
 
 burger.addEventListener(`click`, () => {
@@ -8,7 +8,7 @@ burger.addEventListener(`click`, () => {
 });
 
 if (nav.classList.contains(`active`)) {
-    burger.TextContent = `✕`;
+    burger.textContent = `✕`;
 } else {
-    burger.TextContent = `☰`;
+    burger.textContent = `☰`;
 }

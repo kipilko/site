@@ -99,7 +99,7 @@ nav.active
     {
         display: block !important;
         position: absolute;
-        top: 100%;
+        top: 75px;
         left: 0;
         right: 0;
         background:#1a1a1a;
