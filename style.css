@@ -20,15 +20,6 @@ header
         justify-content: space-between;
         align-items: center;
     }
-nav 
-    {
-        display: none;
-    }
-.hero
-    {
-        text-align: center;
-        padding:4rem 1rem;
-    }
 h1
     {
         font-size: 2.8rem;
@@ -39,7 +30,7 @@ button
         padding: 0.8rem 1.6rem;
         font-size:1.1rem;
         cursor:pointer;
-        border-style:outset;
+        border: none;
         border-radius: 50px;
         transition: 0.2s;
     }
@@ -48,7 +39,8 @@ button
         color: white;
         background: none;
         border: none;
-        font-size: 15px;
+        font-size: 26px;
+
     }
 .hero
     {
@@ -95,16 +87,26 @@ button:hover
     {
         transform: scale(1.05);
     }
+    nav 
+    {
+        display: none;
+        font-style: oblique;
+    }
 nav.active 
     {
-        display: block !important;
-        position: absolute;
-        top: 75px;
+        display: block;
+        position: fixed;
+        top: 92px;
         left: 0;
-        right: 0;
+        height: 100%;
+        width: 280px;
+        transform: translateX(0);
+        transition: transform 0.4s ease-in-out;
         background:#1a1a1a;
         padding: 1rem;
         text-align: center;
+        z-index: 1000;
+        border-top-right-radius: 50px;
     }
 nav.active a
     {
