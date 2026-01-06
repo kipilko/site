@@ -78,10 +78,12 @@ button
     }
 #theme-toggle
     {
+        position:absolute;
         background: none;
-        font-size: 16px;
+        font-size: 26px;
         border: none;
-        text-align: center;
+        top:3.2rem;
+        left:0.7rem;
     }
 button:hover
     {
@@ -96,7 +98,7 @@ nav.active
     {
         display: block;
         position: fixed;
-        top: 92px;
+        top: 0;
         left: 0;
         height: 100%;
         width: 280px;
@@ -112,5 +114,18 @@ nav.active a
     {
         display: block;
         margin: 1rem 0;
-        font-size: 1.3rem;
+        font-size: 25px;
+        color:rgb(253, 255, 210);
+        text-decoration:none;
+        font:bolder;
+    }
+#closemenu
+    {
+        background:none;
+        border:none;
+        font-size:26px;
+        color:white;
+        position: absolute;
+        top: 1rem;
+        left:1rem;
     }

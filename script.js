@@ -5,10 +5,10 @@ const nav = document.querySelector('nav');
 
 burger.addEventListener('click', () => {
     nav.classList.toggle('active');
+});
 
-if (nav.classList.contains('active')) {
-    burger.textContent = '✖';
-} else {
-    burger.textContent = '☰';
-}
+const closemenu = document.getElementById('closemenu');
+
+closemenu.addEventListener('click', () => {
+    nav.classList.remove('active');
 });
